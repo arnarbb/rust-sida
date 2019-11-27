@@ -1,143 +1,194 @@
+
+
+
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin:0;
-    padding:0;
-  
-    background-color: #302e29;
-  
-    background-image: url("https://files.facepunch.com/garry/1b1011b1/test.png?1");
-    
-    background-attachment: fixed;  
-  }
-  /* nav */
-  .nav{
-    display: flex;
-  
-  }
-  
-  /* leftnav */
-  .leftnav{   
-    width: 40%;
-    transition: background-color .3s ease-in-out, color .3s ease-in-out;
-  }
-  .leftnav ul{
-    
-    
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  
-    display: flex;
-    justify-content:space-evenly;
-    
-    list-style-type: none;
-  
-    
-  }
-  .leftnav li {  
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    
-    
-  }
-  
-  .leftnav a{  
-    text-align: center;
-    
-    text-decoration: none;
-    font-size: 30px;
-    color:darkgray;
-  }
-  .leftnav a:hover{
-    background-color:rgba(205,65,43,0.6);
-    color:#1E2020;
-  }
-  /* /leftnav */
-  /* takki */
-  .takki{
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    padding: 37.3%;
-  }
-  .takki2{
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-    padding: 37.3%;
-  }
-  /* takki */
-  /* rightnav */
-  .rightnav{   
-     
-    width: 40%;
-    
-  }
-  .rightnav ul{ 
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  
-    display: flex;
-    justify-content:space-evenly;
-    
-    list-style-type: none;
-  }
-  
-  .rightnav li {
-    text-align: center;
-    height: 100%;
-    width: 100%;  
-  }
-  .rightnav a{
-    text-decoration: none;
-    font-size: 30px;
-    color:darkgray;
-    text-align: center;
-  }
-  .rightnav a:hover{
-  
-    background-color:rgba(205,65,43,0.6);
-    color:#1E2020;
-  }
-  /* /rightnav */
-  
-  /* rust-logo */
-  .rust { 
-    
-    width: 20%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .rustlogo{    
-    width: 100%;
-    
-  }
-  /* /rust-logo */
-  
-  /* /nav */
-  #rustvid {
-    width: 100%;
-    justify-content:center;
-  }
-  .rustvid {
-    position: absolute;
-  }
+  box-sizing: border-box;  
+}
 
 
-  .midja{
-    
-  }
-  /* 1 */
+
+body {
+  margin:0;
+  padding:0;
+
+  background-color: #302e29;
+
+  background-image: url("https://files.facepunch.com/garry/1b1011b1/test.png?1");
+  
+  background-attachment: fixed;  
+}
+/* nav */
+.nav{
+  display: flex;
+
+}
+
+.baðir-nav{
+  width: 40%;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}  
+
+.baðir-nav ul{ 
+  margin:0;
+  padding:0;
+  height: 100%;
+  display: flex;  
+  justify-content: space-evenly;
+  
+  list-style-type: none;  
+}
+.baðir-nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  text-align: center;
+
+  
+}
+.baðir-nav a{  
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 50px;
+  color:darkgray;
+}
+.baðir-nav li:hover{
+  background-color:rgba(205,65,43,0.6);
+  color:#1E2020;
+}
+
+.baðir-nav a:hover{
+  color:#1E2020;
+}
+
+/* leftnav */
+
+/* leftnav */
+
+/* leftnav */
+
+/* leftnav */
+
+/* leftnav */
 
 
-  div div div img{
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition:         transform .5s ease-in-out;
-  }
-  div div div img:hover{
-        cursor: default;
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-  }
+
+
+
+
+
+/* /leftnav */
+/* takki */
+.takki{
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+  
+}
+
+/* takki */
+/* rightnav */
+
+
+
+
+
+
+/* /rightnav */
+
+/* rust-logo */
+.rust { 
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.rustlogo{    
+  width: 100%;
+}
+/* /rust-logo */
+
+/* /nav */
+#rustvid {
+  width: 100%;
+  justify-content:center;
+  display: flex;
+}
+
+
+
+
+
+
+
+div div div img{
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:         transform .5s ease-in-out;
+}
+div div div img:hover{
+      cursor: default;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+}
+
+/* myndaboxin */
+.myndabox{
+  padding: 0;
+  margin:0;
+  display: grid;  
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+
+}
+
+.mynda-sec{
+  padding: 0;
+  margin: 0;
+
+  height: auto;
+}
+.text-sec{
+  margin: 0;
+  padding: 0;
+
+  height: auto;
+  text-align: center;
+}
+
+.text-sec p{
+  
+  margin: 10px  20px;
+}
+
+
+.mynd{
+  width: 100%;
+  display: flex;
+}
+/* /myndaboxin  */
+
+@media screen and (min-width: 80em) { 
+  
+
+}
+
+@media screen and (min-width: 60em) { 
+
+}
+
+@media screen and (max-width: 48em) {  
+  
+}
+
+@media screen and (max-width: 37.5em) {
+  
+
+}
+
+@media screen and (max-width: 30em) {
+  
+}
