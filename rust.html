@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Rust</title>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="rust.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="shortcut icon" href="http://vignette3.wikia.nocookie.net/play-rust/images/d/d2/Rust-Logo.jpg/revision/latest?cb=20140519150348">
 </head>
 <body>
 
-<div>
+    <audio loop id="player" src="Rust Soundtrack - Umbra.mp3" type="audio/mp3"></audio> 
+
+
+
+<div class="utanum-nav">
 
     <div class="nav">
         <div class="leftnav baðir-nav">
@@ -23,7 +29,7 @@
             </ul>
         </div>        
         <div class=rust>
-            <img class="rustlogo" src="https://files.facepunch.com/s/c0444ba57c9a.svg" alt="">
+            <img  class="rustlogo" src="https://files.facepunch.com/s/c0444ba57c9a.svg" alt="">
         </div>
         <div class="rightnav baðir-nav">
             <ul>
@@ -34,9 +40,25 @@
         </div>
 
     </div> 
-    <div class="overlay"> 
+    <div class="audio-div1"> 
+        <button onclick="document.getElementById('player').play()">▶️</button> 
+    </div>
+    <div class="audio-div2"> 
+        <button onclick="document.getElementById('player').pause()">⏸</button>
+    </div>
+    <div class="audio-div3">  
+        <button onclick="document.getElementById('player').volume += 0.1">&#128266;</button> 
+    </div>
+    <div class="audio-div4"> 
+        <button onclick="document.getElementById('player').volume -= 0.1">&#128264;</button> 
+    </div>
+    <div class="overlay">
+        
         <video autoplay muted loop id="rustvid">
             <source src="https://files.facepunch.com/paddy/20190514/rust_bgvideo_website_003_noaudio.mp4" type="video/mp4">       
+        </video>
+        <video autoplay muted loop id="rustmobile">
+            <source src="https://files.facepunch.com/paddy/20190514/rust_bgvideo_website_003_mobile.mp4" type="video/mp4">       
         </video>
     </div>            
 </div>
@@ -46,24 +68,156 @@
         <img class="mynd"src="https://i.imgur.com/SviPSan.jpg" alt="">
     </section>
     <section class="text-sec" > 
-        <h1>rust is a fun game</h1>
-        <p class="texti1">orem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p> 
+        <h1>GrundvallaReglur Rust's</h1>
+        <p class="texti1">Rust er mergjaður leikur þar sem þú vaknar nakinn í strönd með ekkert annað en grjót, 
+            kyndil og markmið á einhverri eyju og ert annaðhvort kvenkyn eða karlkyn. Þetta er leikur þar sem þú getur bara spilað með öðrum og þarft að reyna að lifa af vegna þess að það er mikið það sem getur látið þér af lífi, það eru úlfar, birnir og meðal annars fólk einhverstaðar í heiminum sem geta ráðið annað hvort að morð fremja eða vera vinarlegur en það fer bara eftir manneskju. Þú getur spjallað við fólk gegnum spjallborðið í leiknum eða raddspjallið en til þess að tala við aðra manneskju gegnum raddspjallið þá þarftu að vera nálægt honum
+            </p> 
     </section>  
 </div>
 
 
 
 <div class="myndabox">
-    <section class="text-sec" > 
+    <section class="text-sec text-sec-2" > 
         <h1>rust is a fun game</h1>
-        <p class="texti1">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p> 
+        <p class="texti1">Rust er leikur sem kom á markaðnum 11 Desember árið 2013 á borðtölvum (e. PC) og var gefin út af Facepunch Studios og myndi kannski flokkast undir sem lifunarleik(e. Survival game) og spennu-ævintýra leikur(e. Action-adventure game)</p> 
+        <p class="texti1">Höfundur Leiksins er undir nafninu Garry Newman og er forstjóri Facepunch sem eru framleiðendur leiksins, Facepunch hefur stofnað marga leiki en það er einn sem stendur út er leikurinn “Garry’s mod” hann mest þekktur af hinum leikjunum.</p>
     </section>
-    <section class="mynda-sec">
+    <section class="mynda-sec mynda-sec-2">
          <img class="mynd"src="https://steamuserimages-a.akamaihd.net/ugc/918042971951485814/B3415A99145D2827596A3B6D190C2FFC007C346D/" alt="">
     </section>          
 </div>
+<div>
 
 
+
+</div>
+
+ 
+<div class="myndir-2">
+        <div class="myndir-2-1">
+                <p class="textiuno">Notendur leiksins eru á mestu lagi 13+, það er þegar ég byrjaði að spila ásamt öðrum en meiri hluti er kannski 16 - 40 ára og spilarar leiksins eru meirihluti karlkyn og það myndi finnast mjög sjaldgætt að hitta kvenkyn í leiknum og að lokum er áhugamál þeirra spilara kannski áhætta, ofbeldi og útivist.</p>                
+                <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/779616193691420979/1AA6F6C091CA6EBAB363FB19950F8AA9A1CAB8B0/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt=""> -->
+        </div>
+        <div class="myndir-2-2">
+                <p class="textidos">Þetta er ekki léttur leikur, þú ert að reyna lifa af, á meðan aðrir reyna að drepa þig og ræna að þér dótum. Og þar að leiðindi geturðu misst alla hluti þína, en trikkið er að ekki gefast upp.</p>
+                <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/779616193691431938/DD17ED43F3B40B46186F08FDA041AE768CFDFAB3/" alt="">         -->
+        </div>
+        <div class="myndir-2-3">
+                <p class="textitres">Rust getur verið erfiður á stundum og getur manni fundist það ósigrandi að koma sér á stað en maður ma ekki gefast upp</p>
+                <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/779616193691418724/66E4D9FF00B55748D0D65DBAFBAAF41A41203346/" alt=""> -->
+        </div>
+        <div class="myndir-2-4">
+                <p class="texticuatro"></p>
+                <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/779616193691418724/66E4D9FF00B55748D0D65DBAFBAAF41A41203346/" alt=""> -->
+        </div>
+        <div class="myndir-2-5">
+                <p class="texticinco">hallo</p>
+                <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/779616193691425999/CCDFBB2C0AF908CCEA6091DB647ECF87EE14E0CF/" alt=""> -->
+        </div>
+</div>
+<div class="myndir-3">
+        <p>rust er ekki nýr leikur heldur er hann buin að vera í þróun leingi og er hann ekki að fara neit. rust er buinn að vera i prerealse i 3 ár aður en hann var gefin alminilega út og er hann buin að breitast fullt og er orðin fullur af alskonar hlutum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio maxime qui, nobis quos accusamus voluptate nostrum error reprehenderit aliquid repellat. Iure deserunt ducimus quos deleniti officiis quaerat, nostrum earum dolore.</p>
+        <img class="myndir-3-1" src="https://i.pinimg.com/originals/04/6b/fa/046bfaef80370031a287ffe5bbe5b902.jpg" alt="">
+        <img class="myndir-3-2" src="https://i.gyazo.com/3e8b0d10a29c696c8b64499180a2053b.png" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="art-texti">
+        <h1>að lokum</h1>
+        <h2>hugtakalist úr rust</h2>
+</div>
+<div class="grid-container">
+                
+        
+    <div>
+            <img class="mynd"src="https://i.imgur.com/kl6EcNCl.jpg" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/hUeQRjJl.jpg" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/BhQ7tshl.jpg" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/sc4Uuqbl.jpg" alt="">    
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/BDgBVmol.jpg" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/F19tMhVl.jpg" alt="">       
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/EvEpz3Wl.jpg" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/IpFDxvcl.jpg" alt="">           
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/2KfLF2xl.jpg" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/IRhS5JWl.jpg" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/GEPRm9xl.jpg" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/sMIz1XQl.jpg" alt="">    
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/iOXtl5Jl.png" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://i.imgur.com/5f7z5Gxl.jpg" alt="">       
+    </div>
+    <div>
+            <img class="mynd"src="http://isaakbelkacemi.weebly.com/uploads/5/9/9/7/59978263/2922766.jpg?250" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="http://isaakbelkacemi.weebly.com/uploads/5/9/9/7/59978263/2145816.jpg?250" alt="">           
+    </div>
+    <div>
+            <img class="mynd"src="http://isaakbelkacemi.weebly.com/uploads/5/9/9/7/59978263/8866594.png?250" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="http://isaakbelkacemi.weebly.com/uploads/5/9/9/7/59978263/8494948.jpg" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="http://isaakbelkacemi.weebly.com/uploads/5/9/9/7/59978263/848858.png?409" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="http://isaakbelkacemi.weebly.com/uploads/5/9/9/7/59978263/833804.jpg" alt="">    
+    </div>
+    <div>
+            <img class="mynd"src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9304f544-03ff-4290-bdbe-aea57210d76f/d8t293c-520554ca-0633-4b50-9b56-69fd486f7001.jpg/v1/fill/w_1024,h_435,q_75,strp/rust___well_sketches_by_howi3_d8t293c-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDM1IiwicGF0aCI6IlwvZlwvOTMwNGY1NDQtMDNmZi00MjkwLWJkYmUtYWVhNTcyMTBkNzZmXC9kOHQyOTNjLTUyMDU1NGNhLTA2MzMtNGI1MC05YjU2LTY5ZmQ0ODZmNzAwMS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3HC8NZlrqOs8VnY2WmehfgZt7O5kINVYuqvkoHrFe1w" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a2dc2276-01d7-41d8-82c6-75eacaf4ce56/damzmji-bfb05e2f-a1e4-4066-8a10-2a51279e7dbb.png/v1/fill/w_1000,h_542,q_80,strp/rust_fanart_by_noksemojo_damzmji-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTQyIiwicGF0aCI6IlwvZlwvYTJkYzIyNzYtMDFkNy00MWQ4LTgyYzYtNzVlYWNhZjRjZTU2XC9kYW16bWppLWJmYjA1ZTJmLWExZTQtNDA2Ni04YTEwLTJhNTEyNzllN2RiYi5wbmciLCJ3aWR0aCI6Ijw9MTAwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.KZ6G-f6ZR0mU2N6cc_JMq_FrQUkYG4MgZkwN24DB7pI" alt="">       
+    </div>
+    <div>
+            <img class="mynd"src="https://cdna.artstation.com/p/assets/images/images/002/158/282/large/taylor-flynn-screen02.jpg?1458029282" alt="">
+    </div>
+    <div>
+            <img class="mynd"src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUXGBgXFxgWFRgXFxUXFhUYGBcVFhcYHSggGBolGxcXITEhJSkrLi4vGB8zODMtNygtLisBCgoKDg0OFxAQGi0dHSUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALoBDwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAwIEBQEGB//EAEAQAAEDAwIDBAcGBAUFAQEAAAEAAhEDEiEEMQVBUSJhcYEGEzKRobHwFCNCUsHRU3KS4RVDYoLSM5OisvFjB//EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAdEQEBAQADAQEBAQAAAAAAAAAAARECEjEhQRMD/9oADAMBAAIRAxEAPwD5vWqEHC7TeS4N71Osx04XKNMhzSREHJWPuu8nHqunTtkiTIEqHqBc0ZyJ+atOqtzkT4biFEFstddsIiFtwJ+ztgE3c9s7Fcp0Wkkdr+ydTcP4kZ2jvUWvHrCZx/ZBVqATiY71GFOEQghCIU4RCCEIhThEIIQiFOEQghCIWjwzQMq3B1ZtKIi4EzM9Ntue6TrNPTaYZVFTqQ0tj3qdpuLlzVSEQpwiFULhEJkJdYwggagUTVUIVnQ6O8kuNrB7Tv0Hefh8CEKUkEwYG5AMDxKkm6nWXdhgtpiYA543PXz81SQPlRNQJSIQM9apXJMIQPLkXBIhEIHXhFyTCkwZQOhdaFIBSAQMtRam2rlqCNOkXGGgknYASVG1amo+6DGD8bGvcY9q4XCc5A2ju71GpqXBlO1xEBwInHtEjHn8FNXGbCLVc+0k4c1jvFoHxbBRfTO9Mj+V5H/sCqinai1W7KZ/E4eLQfiCPkn6fhNSoCaQvA3Ia4D3kR8VNMZtqIWjT0LbbnPJjdtJnrX+cENb5lX6PDmFs2spN/NWqXv/AO1TLWjzJUvKRZxrF1GjqU2h72OY07FzS0e8qozUNuDYLieQIbPcHOwF6PimoApOLNU+sQRIcBYBsCGiO7dp35rydYE5x5CBhZnK1uyRedqWNL6dQMadx2nPcwj8Jc0WuBHxz3KdGi55DWguccAASSe4BZPHAfXE9Q0/AKxS4sYa4NhzcS0lpwDBxttGI/d2sh1lrVfoywEVgWZAIdILScTHMeHRZujpRcJkXEAgyIHTmPAqfGeN1NQR6wzY4AeGefM9kZhd0DOyf5nH3ulT/Pd+rzzPhlqLUy1dtXVyJcFTcZV+qMFU4QQa0kwNyruucGNFJuw9oj8R5meYx7g1d4WwX3H8ALvPAb/5OafJVqpkk9VFKaPkfkuQmtH6/JchVC4RCZCIQLhEJkIhAuEQmQiEC4XW7qcIAQWWtUg1FHZMDUDbUWptqLUG9wPRN1NOx4m0wCBD2znDuYieyfgu6j0MqiS17CwTBcS0k4ERB5nqqvo7xAUana9h2D3bgHwyV6f0u4jXoaU19O9slzQHEB9rXbubMtnbJB5rF2eNzK8cOB1i802gOt9pwd2Gxvc8wBuEU9Lpg6x1d1d/8PR0zWd/X7PulbnB+D0tSxlXVVauoqEB5bVefVs6WMaRG/PHcl8U4vQ09Siz1NlE1A11ri0QCM+rZAmecTAI5rP9PuLOHzXKHDalt1PTUNM3+JqnivU7obIpNdPI57lT4nqtM0AV9RW1jh+C6ylPKGNDWjwtK9rxng2l1Jl4Mwe017gSJxGS2InkvB8V9C6rT9xVaWGIvBaQCPxOaIJ8hv3KfWpIp6j0hqFvq6LWUGiS0MaBt5YyeQG6yaOs1DnOtqGQe0bzEzEK1W9F9a1vYscJJJa4DntL46ApWm9GdUJvBYOYDmyYPKCrItp2g173tqtcATiJa20mcgkAGfNNGmaAxz6LbXSRD3AOtMFsXEjPPCtUuD1GC0MP9QP6qPq6rXs+7vaJwXAgdoEm0uAjnA35q4527WbxLhdN7nOLnU3zlpaHDOZER1GDCqU+C5H3rY5yHA+4Ajn1XpeLl1SmWCiMNLQ9zmiociHOiBvJMT4rL4bonsZFS0Gfzt2gRuVOP31q/FGvwZ1xLYI6XAk+QM4VrR6V7GAOaRvu0t594VtwaN3D48/JTY9rRIe4fyj9yFuTGLbVe1FqsDWjmC7xg7eIn4qAk9rAGQABGxye/ePJXUwhzMKkynJA6kD3rTc1U9O3tt/mHzCqPSj0eLNPW9UHVKnsgxZNtUB1rScjskzzWGOAan+A/wBy9XqPUhtSq6pVaGufcBnaoW9kAZk7LPHEtIf83Ue6P1WdayMM8D1I3oPHLbmcAe8gLv8AgGp/gP8ActepxHSkYqajdu7eQcCTvvE+an9v0kT63Uf0/om0yMCvwiuwAvovE7dmfkkfY6n8N/8AQ79l6Opxag0dh1d9wIMmyAREjvWV62n/ABdZ/wB5v/FXamRlvbBg4PQ4K4YG5hXNRVMj1dSvHP1lX/iFv6P0uc32qAMx/mbQImLd02mR5WOX1jdAC16/FSa1GoGCKLqhifb9Y5zs42yB71pV/S0vY5h07GhwLZDtpBEgW7ptMjyxj68Y+eFY1Ogq0wDUpvYHbFzSJ9/PuUaTy11B4ALqJmDs/wC9c+CeWDvC9N6R+kdPUUhTYx4JIJLwMR0gmT34TTHmtMFaDVHTMwrAaqhtqLU61FqBdOkXEAbn6J8AMpuorw5vqHGxk8zFYndxGzWmMRnvVp4DdOWwC6s+PCnTguI8XEDyVS1Z9q+G8N4nWM02Pa2s9r2MJjDpuE9HQ0gd5CwGUH/e/aA55BLHNeZ7cYdBmDE5GD5Z9lwvW07Qyqxpc3LHloJHQSemIVCrR9fqHwQLmPPiWC5s/LwK5eXHWeavf/z30lFakNPVP31MWtcf8xg9nO1w274B6r19YNLSDH95x8SvmnB6bGlxLQS27fImOz8YK0G8RrDHrXHxM/Nan1m3Hsq2nY6IgZgweR7usgBVq9Ds77iPD6hecZxquPxz4tb+y67jVY7lv9IWuqdk9dSPPO2O/f68FkVmX/h5RB8B/ZW6ure4yY93VVyJM81cTVOmzx2nrv8AXxULJ3HM/A4+C1KunpPpwX1GvzkAR3QRlUdFpPVti4uzMkk+WVJ9q3CfVE8v0Q3THmY8FetRatYzqsKI6Jh5Dom2otVRU1DeyqIC09WOyqNqC9/iNSpSqU3uu9ky4kui8SASetqzLVa029v5hb79v/INPklWqKVCLUy1dtVQq1Fqbai1Aq1Fqbai1Aq1Fqbai1Aq1Fqbai1A/StwrAao6VuPrKeGoHWoLU61V9dVDGFx8PMqW5Fk0zVgGq4Agim1rBAgTFzvOSo2pPCSXUmvd7T5eeU3HHwhXLVOMyHL0m1WNA0Nc9+xFOoZ/wBpUbVR4i8YYKzmOd2bWtm9riAbjyGNuac/F4+o6LTWi6T2gCR4q1am2rtqsmJbpNqLU61FqqE2otTrUWoE2otTrUWoE2otTrUWoE2otTrUWoK9RkgrLtW25qyIQLtTKwntdd/5uvgfnKIUmGOU9QdiOiBJai1OqMESDiduYzz6+IUYQLtRamQiEC7UWpkIhAu1FqZCIQLtXQFOEQguUBhPDVHStxsnhqBlqa6nSeyyo0giYewkO7W4MbiCVyEQpZsxZcYfEeB16cmi91Voj2C4wIBHY7pjyyVU03GXt7Lxdyzg+/6HeV6qlUc0y0kHqCuamhRrGarId+dkSY/M04cufXlPGtlUdNqmvGPcfrZZtD7zVuMAhoMEPnbsxaDjJKfqNA9j+xaaYkucSbyJkkNg9qMAzhK9H6ZcTWEBrsQAJcRuZ6TKu25p8mti1FqZCIXRgu1FqZCIQLtRamQiEC7UWpkIhAu1FqsUqbTMvY2BPadGBufAJdzCYZUa+N7ZMecR7lO03Fy5pdqLUyEQqhZaseFuELJp0i5wa0SSYAQGm0b6hhjC7+2+Sr1H0e1DjFgHi4c/Ba3C/WAttaHNbLC4EBoxBMTJi3OM3Aju8870xrVHkesZQbBhzKfrDiY9qd+sLOtYfreDVKQBfbm4YJPs7zjGxhZ8KtT4w57XGtXql+S0CCNsbghuTyHNIPEXhgcKxvLiCywYbyN8QT3QmmNKnSLjDQSegyq51NP87fetz0P1TqgcaglsgBz4IJhxIGAOnwXp7aXRnuammPn7KjSYBBPcU19ItwQR4iEz00qkVW21A0WmGsOcOdkxsOnLBWZo+KyLa0n8r93Dud+YfEd6aYuwiFxtZhIAcDMxB3jeE40jBdBgCSVpkqF21V3OfUe2nRi50OabiAdyAC0yD2T/AEpmm19WpLahMNggF1xzObufUHnO5wpq42KbcBMDUUhgKYCqGQiFKEQgjC5CnCbpqNzo6Ak+DQSfkgoarVtp75PJo3P7BI4dqHVHER2NwRgC0+yZ5mfgfOrR0rqz3OdjPa/4hbNKkGgBogDYBT1fEsdD7x+y5A712FKnSLvZBPgJjxVQv3/D90AfX/xRqamiww+qJ/Kztu8OzifEq9Q1lUf9HTtpNifW6gw7xDOXjkLF5Rqcao6t4pAGoQydpkE98Qsk8fplwaxlSpn8DQT5Z+a2+LazTGiftFQ6jOBTENDoIkEzHjK8BS1DmPubA2lu4LQdnSIIUnK1qyR6LRcfbc6nWDKZnBLxcP8AS9okA7LaAXheKaH1lV7qRlw7TqZGdpmn+cf6dx3q3Q9JHzTcwuYW47JgSBv3iORlO2Q67V/iUVHE5aMMBOMz+LmMlS9EKZFOpO98T1Aa0iDzGd1k8a467Uva58C1wGBEgFsE4ycH9IW56ItjTj+Z3xPP5eSnDd+rzzMjYhchThELq5IEKpp/u6RqfifLGdQPxuHyV13fkLH4mLy11JzmWANY05AaMzdM3TnnOMqVY0hrXaceqbEx2/5z/wAcD3rJq6Ci32AHXZJcBOc2gbNjuXRO7jJJJJ8V2Ew1XOjp/kb7l0aRn5G+5PhEKoHPJABJIGwJJAXaQFwnaRPhOVyEQgufeT2gSyT+G5pH+nEfosfVaGlex1obLiDSLixr7QCbX/gPaGD5HkroxssniNZ9RzmFrnBhEFvbIlslpE4GZlZrUL+wPEtgTBGHBzYLgYuaYnBnxCQ/hlQZtB8CD8N1scPZFNogjfffc79FYhMNZnCHxWYXGyx7CScWgB7nE9IvCdw+cn8Mm09QXE4/0yceJVmtQDsH9J3nmO5SFBrSSHPJP5iDA6Y3/umGtXTt7ITgEvTZaCnALTLqF1CDiv8AA3NFZt0Qbmmdoc0jPcqQE4GVr8M0zqcvcGg8rslvfEwPP3LHPlOMa48bazW8PAqPpUi18EnsvaTHV2cEYBSq1ahTxUrtJ/JSHrXeBIhrT4uVt3B213F9TUPcDk0xDWb4JAgPmN4aRHNUK2s01LUUKTWvY17w0uuDYjqYuIJiZdgSsf035HTpPVijUe6TR0hgfj1DoA7y0QAPeO9UeLa5jRbqdTf/APlQaA0eJ2jvBXo+N8Epaof9SrTwYAcS0EGPYOB5RuvCa30R1LXEUjTeNwZscQRMwZj3qZb61LEKvHoAGmospnqQHOdvAJI7visirrq9ckuJfnJkR5cp8N1ad6M8Rbgaed8h9MzPL2u5S4Z6I64khzRRaSCS5zN87QTndWROxPDnGoyoxsl3ZAbDRJned5EHcq5Q4K4PDXCcB5Fxa0iSIDoMnHRb+h4K3TiC4Egbk9egH/1QdqGtql7niwU4G5IcHOJgRtz3WsYt2vG8W4Y/1jntcCQ487HNIPKT7iD7lZ0OjfqXAVGFjxn1zQC10Y+9AOXdHDPUGFv8SdpajYDXg7OcIY52xvO+e+JMqtonvANOi0jMkklxzIkl23lG6k1bWHxDgjqdQ2S9uDdnfugEYXp/RqiWadocIMuJEHm49Ve0dJzWi4y45cZJz3T3J63Ixa4hdQtMk6r2TCylq6z2SsooBCEIBCEIBCEIBIHDaTiS97gSSYspvG+IvBjCehLDUKVMNAaNhgbD4DHuU0IQCEIQaejHZCsBK0vshNCAQuSiUDm6pzRDYbykAAnxdv8AFZuqqVHPLqZmm0OHaz648y0cm4gEzPmrOvA9U1n4qriCdraTBL/6iQ1SaABAwBt3LGS1rbjP4fxWsWPbRaPXGmbBjdpm4NPOy4hvdz2Pl33VWVHai55FzROLagwQDgxnLT+8e/0lOgCHmk0VGm4PAgnxI+oKwq2l9dWrBsQWmp5s3PcS0ke5cvLjp+a1fQv0i+0UwHH75oFw5uLcXgY9psz3+IXphBI78D/2YfDcL5/6NadjXXQbmg7GIIwPHJXonatxET8NoMiPA7Lc+s249DqaYx0PZPmPnIA81m1qpt7WCY2jDvZn3wPNU6nEKjsF3wH7KsXHqeZ95k/Fa6p2VqntY2JBI57AH4Bo8lnVuHVHufs1pJiTycAdh39VtSiVrGezyOuBp1fVzdAbPeSJ2AJV70QfIrHman6eCva3gzXk1W1SHn8JBAwIEOaZ5KPAeGmgx1xlzjJiIHQYAWZ63c6tVC7TYXGAJJ5BNe/T0v8ArVhP5KfacO5xGG+ZHitW4xJpKFebUZqGgaekRBGSN5nJfOB4+SqaiiWOLXRI6ZUnKUssI1HslZC1NU+GlZUrSOoXJU2UyfPrj5oIoWpouDX71AMxgE9OsdQtZvo3SDSS55MdQI+Cmrjyq7ad4wtr0q4XRoaZ9UAgtczZztjUY0g9cFy8RxN7qZY5hNhO0mJ3g+IHvB6ppjcQtj0VoUarR2QRaSCSZMuJz35I/wBq2Bwig5s+rA7RGCRgVC3r3Jpjx6F6LW8GpAOLbgQ1xGZy0mNx4LO1PDA3Z/LYj9QU0xnITaunc0TgjqDPvG4SZVRqaM9kKwFU0DuyrQKCEolQlV+Ian1dNzpiBjxOyluRZ9MOa9TIIphtMQSRtc455kkJ8rO4M4mkHnBeS8/7jPyhXpU4zIcvU5S2UmsFWoBBFJ89IMThdlZ/FqhhtNtVrS/slhEue0kbflAjcdU5+Lx9S4VoiwXF03CYjac781oyoSiVZJEt1OUSoSm6eg55honr0HiUtxEZRKpcTqVqRILWNaATcXZP8rXRd4tkLzj9XXrmKdNzx+Zxhn6N+anaXxvpf16p2spjd4+fyWbrvSKiwQ0knvEDyHP4KhR9Hqj8163+1n7n9lsaLhlGl7FMA/mOXe85TLTeMZNB2ornaoGHm7sgj+UkfIr0PD9NRpAH1LXPjLqji/PcIAA8AF2USnWJ3q7U4hUIi6B0b2R8FVlQlErTJetPZKzFo6zLSsyUC6tQicjugGRjmds/ou0KwG5G458rv2K6BknrHwUpUxdbWj4xTYZgu8I6N/ZWNR6TOcLWUhJwLnczjkF5stHQe5S09JtzccxsSOfcmGn+knHKlfSvZVDACAeyHSCCC0SXdQFl6TSOr6Uk+z7M9CNj7/mrY0L6lMlonoDeZIggYaYzCt8HoToXvDnMBflkNtJubByJBiJE7grNajP4B6QU6Lm0rPVhroD5PM7vnqdyvRf4/WYXNAZ7TjlpmS4uP4u9eF4lpQyo2o6bHkXR37/CVuOtALXOLnMDTkh00nQ1rnRzabQe5zTgJCtd/pC8zIYcEQA78Rk81Xq8Ue4zYBiMnvOY81SC7K1jOmnVPDSLiLoBtgCJkg4JPvCgoyiVUaHD3YIV0FZ+hOFdBQKlGo01Kqy1znMdBFwgtMz7TTjnul3IuUs2YsuMbiOm1Wn2eXMEAFtpYABjIGMf2CNLx84DwDyJGD5jr3YW9p9U9hljiOR6EdCOar19FQqmXN9W482iWHxaCCPFpXPOUa2VOjqWvEg/usmmL9WSQ6GAwZFuMYEdSfch1B1N8Bs0x7Tw6MDJtbvsIAiM5HNL4DTy6o0NtdgnMuI3I7plXbc0+TW9KJS7kXLowuUX0xlwc4/lw1vmdz8FY/xh4ENaxo5ADZZdyLlm8JfWpys8Fai17i9zQScmdiepGxPemSl3IuVkxm3TLkXJdyLlQyUXJdyLkDLkXJdyLkHNUeyVmSr2qf2Ss2UDJRKXKJQMlAdGUuUSg0dPqqbWgFpJHcyPIkEptDWNNGtTMAuNw5AmWyB0OFkyiVMXSeG6R+p05a1pcWyMCYgyJ+toWbwq71tMMEuLg23e6cOaR0IkHulbXoNxmlpadV1YkBzgGgC5zi0S6ByiW5J5haj/AE70rXF7NM647uPq2E+JElZaUtdo3aeq6i7IAupne6mTAk/mBwfI80qUriXpO3VVaf3NhFzQfWXYdBgttHNo5812VqM0yUSlyiVUaOgVwOVLRiBMqwHIK1atH15/KfcojUj6j91JCCP2kTsfqf2XfX4nbIGeUiV1CDh1A+oz8VBtZrQAAAOggcicJiIQROpHepOriYz9R+6Fwc/rkEHDqR9R0nqu/aB8Y5dYXUQgj9pHf8O/v7l018x9bA/quoQRbqJIA+sH9k25QQgnci5QQgnci5QQgKokQqn2Y9QraCgqO0x6ro0p6q0hBVGmPVSGl71YQgr/AGXvS6mnIVxCDK4ZQp0T26TasTioMAkyTG04A8luU+Ptb7Olot8AB8gqdYbefyKqgZCmLq/xHjBrMsdTYBIIiZBBkc1nhpPJWWtGcBTeMDxCqKYplSp0pVyF1qCbIAgKQclroQf/2Q==" alt="">           
+    </div>
+    <div>
+            <img class="mynd"src="https://vignette.wikia.nocookie.net/play-rust/images/f/f1/Car_Concept.jpg/revision/latest?cb=20160519214344" alt="">           
+    </div>
+
+</div>
   
 </body>
 </html>
+
