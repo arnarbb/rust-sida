@@ -1,6 +1,5 @@
 
 
-
 * {
   box-sizing: border-box;  
 }
@@ -20,7 +19,7 @@ body {
 /* nav */
 .nav{
   display: flex;
-
+  
 }
 
 .baðir-nav{
@@ -41,7 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
   width: 100%;
   text-align: center;
 
@@ -50,56 +49,69 @@ body {
 .baðir-nav a{  
   width: 100%;
   height: 100%;
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
 
   text-decoration: none;
-  font-size: 50px;
+  font-size: 35px;
   color:darkgray;
+  font-family: 'Bebas Neue', cursive;
 }
 .baðir-nav li:hover{
   background-color:rgba(205,65,43,0.6);
   color:#1E2020;
+   
 }
 
 .baðir-nav a:hover{
   color:#1E2020;
+
 }
 
 /* leftnav */
 
-/* leftnav */
-
-/* leftnav */
-
-/* leftnav */
-
-/* leftnav */
 
 
+div button{
+  /* position: absolute; */
+  /* width: 40px;  */
+  box-shadow: 4px 5px 30px rgba(0,0, 0, 0.4);
+  border-radius: 90px;
+  transform: scale(1.05);
+  background-color:rgba(205,65,43,0);
+  color:white;
+  z-index: 1;
+}
+ .audio-div1{ 
+  margin:0;
+  position:absolute;
+  z-index: 1;
+}
+.audio-div2{
+position:absolute;
+  margin-top:26px;
+  z-index: 1;
+}
+.audio-div3{
+  position:absolute;
+  margin-top:51px;
+  z-index: 1;
+}
+.audio-div4{
+  position:absolute;
+  margin-top:77px;
+  z-index: 1;
+} 
 
 
-
-
-
-/* /leftnav */
 /* takki */
 .takki{
   transition: background-color .5s ease-in-out, color .5s ease-in-out;
   
 }
-
 /* takki */
-/* rightnav */
-
-
-
-
-
-
-/* /rightnav */
 
 /* rust-logo */
 .rust { 
@@ -112,22 +124,18 @@ body {
 }
 /* /rust-logo */
 
-/* /nav */
 #rustvid {
   width: 100%;
   justify-content:center;
   display: flex;
 }
-
-
-
-
-
-
+#rustmobile{
+  display:none;
+}
 
 div div div img{
   -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition:         transform .5s ease-in-out;
+  transition:transform .5s ease-in-out;
 }
 div div div img:hover{
       cursor: default;
@@ -142,53 +150,322 @@ div div div img:hover{
   display: grid;  
   grid-template-columns: repeat(2, 1fr);
   height: auto;
-
 }
-
 .mynda-sec{
   padding: 0;
   margin: 0;
-
   height: auto;
 }
 .text-sec{
   margin: 0;
   padding: 0;
-
   height: auto;
   text-align: center;
 }
-
-.text-sec p{
+/* myndir 2 */
+.myndir-2{
+  overflow:auto;  
+  border:1px solid black;
+  color: white;
+  width:1024px;
+  height: 500px;
   
-  margin: 10px  20px;
+  border:10px solid rgba(31, 30, 30, 0.548);
+  margin: 100px auto;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
+.myndir-2 img{
+  margin: 0;
+  width:100%;
+  display: flex;
+  height:100%;
+}
+.myndir-2 div{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+}
+.myndir-2-1{
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691420979/1AA6F6C091CA6EBAB363FB19950F8AA9A1CAB8B0/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");  
+}
+
+.myndir-2-2{
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691431938/DD17ED43F3B40B46186F08FDA041AE768CFDFAB3/"); 
+      
+}
+
+.myndir-2-3{
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691418724/66E4D9FF00B55748D0D65DBAFBAAF41A41203346/");
+  
+}
+.myndir-2-4{
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691423635/2C4C50F6796F215C1F06E1E38526B0B08D3AECB5/");
+}
+.myndir-2-5{
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691425999/CCDFBB2C0AF908CCEA6091DB647ECF87EE14E0CF/");
+}
+.myndir-2 p{
+
+  display: inline;
+  color: rgba(255, 255, 255, 0.89);
+  font-size: x-large;
+  background: rgba(27, 27, 27, 0.664);
+}
+
+.textiuno{ 
+  margin:25% 45% 50% 2%;
+  padding:15px;
+  
+}
+.textidos{
+  margin:20% 45% 50% 5%;
+  
+  text-align:center;
+  padding:15px;
+}
+.textitres{
+  margin:20% 45% 50% 5%;
+  
+  text-align:center;
+  padding:15px;
+  
+}
+.texticuatro{
+  margin:20% 45% 50% 5%;
+  
+  text-align:center;
+  padding:15px;
+}
+.texticinco{
+  margin:-20% 45% 0% 5%;
+  
+  text-align:center;
+  padding:15px;
+}
+
+/* grid-container */
+.art-texti {
+  display: flex;
+  flex-direction: column;
+  background: #222121b2;
+  margin: 10px;
+  text-align: center;
+  
+}
+
+.art-texti h1, .art-texti h2{
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo Black';
+  color: rgba(255, 255, 255, 0.849);
+ 
+}
+
+.grid-container {
+  margin: 10px;
+  padding: 20px;
+  background: #222121b2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "auto auto auto auto auto" "auto auto auto auto auto" "auto auto auto auto auto" "auto auto auto auto auto" "auto auto auto auto auto";
+}
+
+.grid-container div{
+  display: flex;
+  margin: 1px;
+}
+
+
+.myndir-3{
+  
+  display: flex;
+  align-items: center;
+}
+.myndir-3 p{
+  width: 500px;
+  color: rgba(255, 255, 255, 0.822);
+  padding: 20px;
+  background: rgba(30, 32, 32, 0.795);
+  position:absolute;
+  right:19%;
+  font-size: larger;
+}
+.myndir-3-1{
+  padding: 20px;
+  background: rgba(30, 32, 32, 0.801);
+  margin:40px auto;
+  width: 90%; 
+  display: flex; 
+}
+.myndir-3-2{
+  display:none;
+}
+/* /grid-container */
+.text-sec p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  color: rgba(247, 247, 247, 0.801);
+  margin: 10px  20px;
+}
+.text-sec h1{
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: xx-large;
+  color: rgba(255, 255, 255, 0.863);
+}
 
 .mynd{
   width: 100%;
   display: flex;
 }
-/* /myndaboxin  */
+/* /myndaboxin */
 
-@media screen and (min-width: 80em) { 
+.mynd{
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition:         transform .2s ease-in-out;
+}
+.mynd:hover{
+      cursor: default;
+      -webkit-transform: rotate(2deg);
+      transform: rotate(1deg);
+}
+
+
+@media screen and (max-width: 80em) { 
   
 
 }
 
-@media screen and (min-width: 60em) { 
+@media screen and (max-width: 60em) {
+
+  
+  .grid-container {
+    margin: 10px;
+    padding: 20px;
+    background: #222121b2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    grid-template-areas: "auto auto auto " " auto auto auto" " auto auto auto" " auto auto auto" " auto auto auto";
+  }
+  
+  .text-sec p{
+    font-size: 14px;
+  }
+  
+  .text-sec h1{
+    font-size: x-large;
+  } 
+  
+}
+
+@media screen and (max-width: 64em){
+  
+  .myndir-2{
+    width: 90%;
+  }
+  .myndir-2 div{
+    /* height:; */
+    width: auto;
+    
+    display: flex;
+    
+    align-items: center;
+    background-size: cover;
+    background-size: 100% 100%;
 
 }
 
-@media screen and (max-width: 48em) {  
+@media screen and (max-width: 48em) {    
   
+  .baðir-nav{
+    height: 50px;
+  }
+
+  .baðir-nav a{
+    font-size: 25px;
+  
+  }
+
+  .myndabox{
+   
+    display: grid;  
+    grid-template-columns: 100%;
+    grid-template-rows: ;
+    grid-template-areas:        
+      "mynd"
+      "texti";   
+  }
+
+  .myndabox{
+    
+  }
+  .mynda-sec-2{
+    grid-area: mynd;     
+  }
+  
+  .text-sec-2 {
+    grid-area: texti;    
+  }
+  .text-sec h1{
+    font-size: xx-large;
+  }
+  .text-sec p{
+    font-size: large;
+  }
 }
 
 @media screen and (max-width: 37.5em) {
-  
 
+  
+  .grid-container {
+    margin: 10px;
+    padding: 20px;
+    background: #222121b2;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+    grid-template-areas: "auto auto" " auto auto" " auto auto" " auto auto"  " auto auto";
+  }
+  
+  .baðir-nav a{
+    font-size: 20px;
+  }
+  #rustvid {
+      display: none;
+    }
+    #rustmobile{
+        display:block;
+        width:100%;
+    } 
+    .myndir-3-2{
+      display:block;
+    }
+    .myndir-3-1{
+      display:none;
+    }
 }
 
 @media screen and (max-width: 30em) {
-  
-}
+  #rustvid {
+      display: none;
+    }
+    #rustmobile{
+        display:block;
+        width:100%;
+    } 
+    .myndir-3-2{
+      display:block;
+    }
+    .myndir-3-1{
+      display:none;
+    }
+  }
+
+
