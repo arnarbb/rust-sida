@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;  
 }
@@ -29,7 +28,7 @@ body {
   display: flex; 
   position:fixed;
   width:100%; 
-  z-index: 1;
+  z-index:1;
 }
 .baðir-nav{
   width: 40%;
@@ -233,6 +232,21 @@ div div div img:hover{
   text-align:center;
   padding:15px;
 }
+/* vidio */
+.vid{
+  display: flex;
+
+}
+iframe{
+  margin: 20px auto;
+  padding: 30px;
+  background: rgba(30, 32, 32, 0.692);
+}
+
+
+
+
+
 /* grid-container */
 .art-texti {
   display: flex;
