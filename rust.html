@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +12,20 @@
   <link rel="shortcut icon" href="http://vignette3.wikia.nocookie.net/play-rust/images/d/d2/Rust-Logo.jpg/revision/latest?cb=20140519150348">
 </head>
 <body>
+<script>
+        $(function () {
+        $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+        });     
+</script>
 
     <audio loop id="player" src="Rust Soundtrack - Umbra.mp3" type="audio/mp3"></audio> 
 
 
 
-<div class="utanum-nav">
+<div class="utanum-nav" id="heim">
 
     <div class="nav">
         <div class="leftnav baðir-nav">
@@ -29,7 +36,7 @@
             </ul>
         </div>        
         <div class=rust>
-            <img  class="rustlogo" src="https://files.facepunch.com/s/c0444ba57c9a.svg" alt="">
+                <a href="#heim"><img  class="rustlogo" src="https://files.facepunch.com/s/c0444ba57c9a.svg" alt=""></a>
         </div>
         <div class="rightnav baðir-nav">
             <ul>
@@ -67,7 +74,7 @@
     <section class="mynda-sec">
         <img class="mynd"src="https://i.imgur.com/SviPSan.jpg" alt="">
     </section>
-    <section class="text-sec" id="#UmRust" > 
+    <section class="text-sec" id="UmRust" > 
         <h1>GrundvallaReglur Rust's</h1>
         <p class="texti1">Rust er mergjaður leikur þar sem þú vaknar nakinn í strönd með ekkert annað en grjót, 
             kyndil og markmið á einhverri eyju og ert annaðhvort kvenkyn eða karlkyn. Þetta er leikur þar sem þú getur bara spilað með öðrum og þarft að reyna að lifa af vegna þess að það er mikið það sem getur látið þér af lífi, það eru úlfar, birnir og meðal annars fólk einhverstaðar í heiminum sem geta ráðið annað hvort að morð fremja eða vera vinarlegur en það fer bara eftir manneskju. Þú getur spjallað við fólk gegnum spjallborðið í leiknum eða raddspjallið en til þess að tala við aðra manneskju gegnum raddspjallið þá þarftu að vera nálægt honum.
@@ -79,7 +86,7 @@
 
 <div class="myndabox">
     <section class="text-sec text-sec-2"> 
-        <h1>rust is a fun game</h1>
+        <h1>Um Rust.</h1>
         <p class="texti1">Rust er leikur sem kom á markaðnum 11 Desember árið 2013 á borðtölvum (e. PC) og var gefin út af Facepunch Studios og myndi kannski flokkast undir sem lifunarleik(e. Survival game) og spennu-ævintýra leikur(e. Action-adventure game)</p> 
         <p class="texti1">Höfundur Leiksins er undir nafninu Garry Newman og er forstjóri Facepunch sem eru framleiðendur leiksins, Facepunch hefur stofnað marga leiki en það er einn sem stendur út er leikurinn “Garry’s mod” hann mest þekktur af hinum leikjunum.</p>
     </section>
@@ -87,14 +94,11 @@
          <img class="mynd"src="https://steamuserimages-a.akamaihd.net/ugc/918042971951485814/B3415A99145D2827596A3B6D190C2FFC007C346D/" alt="">
     </section>          
 </div>
-<div>
-
-
-
+<div id="Myndir">
 </div>
 
  
-<div class="myndir-2" id="#Myndir">
+<div class="myndir-2">
         <div class="myndir-2-1">
                 <p class="textiuno">Notendur leiksins eru á mestu lagi 13+, það er þegar ég byrjaði að spila ásamt öðrum en meiri hluti er kannski 16 - 40 ára og spilarar leiksins eru meirihluti karlkyn og það myndi finnast mjög sjaldgætt að hitta kvenkyn í leiknum og að lokum er áhugamál þeirra spilara kannski áhætta, ofbeldi og útivist.</p>                
                 <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/779616193691420979/1AA6F6C091CA6EBAB363FB19950F8AA9A1CAB8B0/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt=""> -->
@@ -108,15 +112,15 @@
                 <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/779616193691418724/66E4D9FF00B55748D0D65DBAFBAAF41A41203346/" alt=""> -->
         </div>
         <div class="myndir-2-4">
-                <p class="texticuatro">.</p>
+                <p class="texticuatro">Lifa af, vinna saman og ráðast á aðra. Allt vill að þú deyrð. Þú þarft að finna mat, skjól og vopn til að koma í veg fyrir það</p>
                 <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/779616193691418724/66E4D9FF00B55748D0D65DBAFBAAF41A41203346/" alt=""> -->
         </div>
         <div class="myndir-2-5">
-                <p class="texticinco">Lifa af, vinna saman og ráðast. Allt vill að þú deyrð. Þú þarft að finna mat, skjól og vopn til að koma í veg fyrir það</p>
+                <p class="texticinco">myndir í þessum rúlluglugga voru teknar af okkur >=-]</p>
                 <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/779616193691425999/CCDFBB2C0AF908CCEA6091DB647ECF87EE14E0CF/" alt=""> -->
         </div>
 </div>
-<div class="myndir-3" id="#framtid">
+<div class="myndir-3" id="framtid">
         <p>Rust er búinn að vera í þróin í 3 ár áður en hann var almennilega gefin út í seinasta ár(e. prerelease). Rust fær samt uppfærslur mánaðarlega endurgreiðslaust frá Facepunch Studios. Leikurinn á bjarta framtíð og er alltaf verið að aukast af spilurum svo ég myndi halda að leikurinn Rust sé ekki að fara neitt og á sér bjarta framtíð.</p>
         <img class="myndir-3-1" src="https://i.pinimg.com/originals/04/6b/fa/046bfaef80370031a287ffe5bbe5b902.jpg" alt="">
         <img class="myndir-3-2" src="https://i.gyazo.com/3e8b0d10a29c696c8b64499180a2053b.png" alt="">
@@ -127,17 +131,11 @@
 
 
 
-
-
-
-
-
-
 <div class="art-texti">
         <h1>að lokum</h1>
         <h2>hugtakalist úr rust</h2>
 </div>
-<div class="grid-container" id="#hug">
+<div class="grid-container" id="hug">
                 
         
     <div>
@@ -217,7 +215,7 @@
     </div>
 
 </div>
-  <center>&copy;2019 - ABB/HSM</center>
+        <p class="copy">&copy;2019 - ABB/HSM</p>
 </body>
 </html>
 
