@@ -1,11 +1,10 @@
 
-
 * {
   box-sizing: border-box;  
 }
-
-
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin:0;
   padding:0;
@@ -16,24 +15,32 @@ body {
   
   background-attachment: fixed;  
 }
+
+
 /* nav */
-.nav{
-  display: flex;
-  
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
 
+
+.nav{
+  display: flex; 
+  position:fixed;
+  width:100%; 
+  z-index: 1;
+}
 .baðir-nav{
   width: 40%;
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }  
-
 .baðir-nav ul{ 
   margin:0;
   padding:0;
   height: 100%;
   display: flex;  
   justify-content: space-evenly;
-  
   list-style-type: none;  
 }
 .baðir-nav li {
@@ -42,18 +49,14 @@ body {
   align-items: center;
   transition: background-color .5s ease-in-out, color .5s ease-in-out;
   width: 100%;
-  text-align: center;
-
-  
+  text-align: center;  
 }
 .baðir-nav a{  
   width: 100%;
   height: 100%;
-  
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-decoration: none;
   font-size: 35px;
   color:darkgray;
@@ -62,18 +65,12 @@ body {
 .baðir-nav li:hover{
   background-color:rgba(205,65,43,0.6);
   color:#1E2020;
-   
 }
-
 .baðir-nav a:hover{
   color:#1E2020;
-
 }
-
-/* leftnav */
-
-
-
+/* nav */
+/* audio takkarnir */
 div button{
   /* position: absolute; */
   /* width: 40px;  */
@@ -104,12 +101,11 @@ position:absolute;
   margin-top:77px;
   z-index: 1;
 } 
-
+/* audio takkarnir */
 
 /* takki */
 .takki{
   transition: background-color .5s ease-in-out, color .5s ease-in-out;
-  
 }
 /* takki */
 
@@ -128,6 +124,8 @@ position:absolute;
   width: 100%;
   justify-content:center;
   display: flex;
+  position: sticky;
+  z-index: -1;
 }
 #rustmobile{
   display:none;
@@ -169,7 +167,6 @@ div div div img:hover{
   color: white;
   width:1024px;
   height: 500px;
-  
   border:10px solid rgba(31, 30, 30, 0.548);
   margin: 100px auto;
 }
@@ -193,15 +190,12 @@ div div div img:hover{
 .myndir-2-1{
   background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691420979/1AA6F6C091CA6EBAB363FB19950F8AA9A1CAB8B0/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");  
 }
-
 .myndir-2-2{
   background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691431938/DD17ED43F3B40B46186F08FDA041AE768CFDFAB3/"); 
       
 }
-
 .myndir-2-3{
   background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691418724/66E4D9FF00B55748D0D65DBAFBAAF41A41203346/");
-  
 }
 .myndir-2-4{
   background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691423635/2C4C50F6796F215C1F06E1E38526B0B08D3AECB5/");
@@ -210,44 +204,35 @@ div div div img:hover{
   background-image: url("https://steamuserimages-a.akamaihd.net/ugc/779616193691425999/CCDFBB2C0AF908CCEA6091DB647ECF87EE14E0CF/");
 }
 .myndir-2 p{
-
   display: inline;
   color: rgba(255, 255, 255, 0.89);
   font-size: x-large;
   background: rgba(27, 27, 27, 0.664);
 }
-
 .textiuno{ 
   margin:25% 45% 50% 2%;
   padding:15px;
-  
 }
 .textidos{
   margin:20% 45% 50% 5%;
-  
   text-align:center;
   padding:15px;
 }
 .textitres{
   margin:20% 45% 50% 5%;
-  
   text-align:center;
   padding:15px;
-  
 }
 .texticuatro{
   margin:20% 45% 50% 5%;
-  
   text-align:center;
   padding:15px;
 }
 .texticinco{
   margin:-20% 45% 0% 5%;
-  
   text-align:center;
   padding:15px;
 }
-
 /* grid-container */
 .art-texti {
   display: flex;
@@ -255,17 +240,13 @@ div div div img:hover{
   background: #222121b2;
   margin: 10px;
   text-align: center;
-  
 }
-
 .art-texti h1, .art-texti h2{
   margin: 0;
   padding: 0;
   font-family: 'Archivo Black';
   color: rgba(255, 255, 255, 0.849);
- 
 }
-
 .grid-container {
   margin: 10px;
   padding: 20px;
@@ -275,20 +256,16 @@ div div div img:hover{
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "auto auto auto auto auto" "auto auto auto auto auto" "auto auto auto auto auto" "auto auto auto auto auto" "auto auto auto auto auto";
 }
-
 .grid-container div{
   display: flex;
   margin: 1px;
 }
-
-
 .myndir-3{
-  
   display: flex;
   align-items: center;
 }
 .myndir-3 p{
-  width: 500px;
+  width:40%;
   color: rgba(255, 255, 255, 0.822);
   padding: 20px;
   background: rgba(30, 32, 32, 0.795);
@@ -305,6 +282,8 @@ div div div img:hover{
 }
 .myndir-3-2{
   display:none;
+  padding: 20px;
+  background: rgba(30, 32, 32, 0.801);
 }
 /* /grid-container */
 .text-sec p{
@@ -319,21 +298,15 @@ div div div img:hover{
   font-size: xx-large;
   color: rgba(255, 255, 255, 0.863);
 }
-
 .mynd{
   width: 100%;
   display: flex;
 }
-/* /myndaboxin */
 
-.mynd{
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition:         transform .2s ease-in-out;
-}
-.mynd:hover{
-      cursor: default;
-      -webkit-transform: rotate(2deg);
-      transform: rotate(1deg);
+.copy{
+  color:rgba(255,255, 255, 0.6);
+  justify-content: center;
+  display:flex;
 }
 
 
@@ -343,7 +316,6 @@ div div div img:hover{
 }
 
 @media screen and (max-width: 60em) {
-
   
   .grid-container {
     margin: 10px;
@@ -381,9 +353,28 @@ div div div img:hover{
     background-size: 100% 100%;
 
 }
-
-@media screen and (max-width: 48em) {    
+}
+@media screen and (max-width: 48em) { 
   
+  .myndir-2 p{   
+    font-size: large;   
+  }
+  .myndir-3{
+    display: flex;
+    justify-content: center;
+  }
+  .myndir-3 p{
+    width: 50%;
+    
+  }  
+  .myndir-3-2{
+    display:block;
+    width: 90%;
+
+  }
+  .myndir-3-1{
+    display:none;
+  }
   .baðir-nav{
     height: 50px;
   }
@@ -422,8 +413,6 @@ div div div img:hover{
 }
 
 @media screen and (max-width: 37.5em) {
-
-  
   .grid-container {
     margin: 10px;
     padding: 20px;
@@ -444,12 +433,7 @@ div div div img:hover{
         display:block;
         width:100%;
     } 
-    .myndir-3-2{
-      display:block;
-    }
-    .myndir-3-1{
-      display:none;
-    }
+
 }
 
 @media screen and (max-width: 30em) {
@@ -466,6 +450,12 @@ div div div img:hover{
     .myndir-3-1{
       display:none;
     }
-  }
 
+    .baðir-nav a, .myndir-2 p,.myndir-3 p,.text-sec p{
+      font-size: smaller;
+    }
 
+    .art-texti h1, .art-texti h2,.text-sec h1{
+      font-size: small;
+    }
+}
